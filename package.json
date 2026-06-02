@@ -1,0 +1,25 @@
+{
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "name": "msal-test-harness",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Jesus Acedo",
+  "type": "module",
+  "dependencies": {
+    "@azure/msal-browser": "5.9.0",
+    "@azure/msal-react": "5.3.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "parcel": "2.16.4",
+    "process": "0.11.10"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
+  "scripts": {
+    "start": "parcel src/index.html --cert certs/localhost.pem --key certs/localhost.key --port 30123 --no-cache"
+  }
+}
